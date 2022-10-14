@@ -439,6 +439,7 @@ async function process() {
 	// try to load previous classifier
 	await initializeNet( modelName);
 
+	// load all pictures (there are around ten, we are in a sample...)
 	await loadAllPictures( "./datas");
 
 	// If classifier found, test images
